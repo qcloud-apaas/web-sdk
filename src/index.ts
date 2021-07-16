@@ -1,0 +1,36 @@
+import React from 'react';
+import EventEmitter from 'eventemitter3';
+import {
+  SDK as SDKType,
+  CanvasContextData,
+  ContainerContextData,
+  DataFormContextData,
+  DataGridContextData,
+  ListViewContextData,
+  ListViewRecordContextData,
+} from './types';
+import { createBEM } from './bem';
+import { loadUmdLib, loadCss } from './load';
+import { transMetaVal2PureVal, transObjectKeys } from './trans';
+import { useDynamicValue } from './use-dynamic-value';
+
+export * from './types';
+
+export const SDK: SDKType = ({
+  CanvasContext: React.createContext<CanvasContextData>(null),
+  DataFormContext: React.createContext<DataFormContextData>(null),
+  SubFormContext: React.createContext<DataFormContextData>(null),
+  DataGridContext: React.createContext<DataGridContextData>(null),
+  ListViewContext: React.createContext<ListViewContextData>(null),
+  ListViewRecordContext: React.createContext<ListViewRecordContextData>(null),
+  StackContext: React.createContext<ContainerContextData>(null),
+  GridContext: React.createContext<ContainerContextData>(null),
+  TabsContext: React.createContext<ContainerContextData>(null),
+  eventBus: new EventEmitter(),
+  createBEM,
+  loadUmdLib,
+  loadCss,
+  transMetaVal2PureVal,
+  transObjectKeys,
+  useDynamicValue,
+} as unknown) as SDKType;
