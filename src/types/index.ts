@@ -19,7 +19,7 @@ import {
   ModifyRecordAttributeMethod,
   FetchRecordsByConditionMethod,
 } from './fetch';
-import { UseEventHandlers, EventHandlerConfig } from './use-event-handlers';
+import { UseEventHandlers } from './use-event-handlers';
 
 export * from './component-key';
 export * from './container-context-data';
@@ -50,7 +50,7 @@ export type CommonSDK = {
 };
 
 export type DesignModeSDKInjection = {
-  //
+  [key: string]: any;
 };
 
 export type DesignModeSDK = CommonSDK & DesignModeSDKInjection;
