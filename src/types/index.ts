@@ -50,14 +50,7 @@ export type CommonSDK = {
 };
 
 export type DesignModeSDKInjection = {
-  /**
-   * 属性面板事件响应配置组件，仅设计态
-   */
-  EventConfigPanelComponent: React.FC<{
-    value: EventHandlerConfig;
-    onChange: (value: EventHandlerConfig) => void;
-    [key: string]: any;
-  }>;
+  //
 };
 
 export type DesignModeSDK = CommonSDK & DesignModeSDKInjection;
