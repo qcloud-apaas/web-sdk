@@ -21,13 +21,19 @@ export const injectRunModeSDK = (injection: RunModeSDKInjection): void => {
 };
 
 export const injectRunModeBuiltIns = (injection: RunModeBuiltIns): void => {
-  inject(SDK, injection);
+  inject(BuiltInComponent, injection);
 };
 
 export const injectDesignModeBuiltIns = (injection: DesignModeBuiltIns): void => {
-  inject(SDK, injection);
+  inject(BuiltInComponent, injection);
 };
 
-if (typeof (window as any).readyInject === 'function') {
-  (window as any).readyInject(injectRunModeSDK);
-}
+export const injectRunMode = (injection: { SDK: RunModeSDKInjection; BuiltInComponent: RunModeBuiltIns }) => {
+  inject(SDK, injection.SDK);
+  inject(BuiltInComponent, injection.BuiltInComponent);
+};
+
+export const injectDesignMode = (injection: { SDK: DesignModeSDKInjection; BuiltInComponent: DesignModeBuiltIns }) => {
+  inject(SDK, injection.SDK);
+  inject(BuiltInComponent, injection.BuiltInComponent);
+};
