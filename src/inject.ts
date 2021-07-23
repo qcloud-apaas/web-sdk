@@ -1,26 +1,33 @@
-import { DesignModeSDKInjection, RunModeSDKInjection } from './types';
-import { SDK } from '.';
+import { DesignModeSDKInjection, RunModeSDKInjection, DesignModeBuiltIns, RunModeBuiltIns } from './types';
+import { SDK, BuiltInComponent } from '.';
 
-export const injectDesignModeSDK = (injection: DesignModeSDKInjection): void => {
+const inject = <T, I extends Partial<T>>(target: T, injection: I) => {
   /* eslint-disable */
   for (const k of Object.keys(injection)) {
     /* eslint-enable */
-    type Key = keyof DesignModeSDKInjection;
-    const key = k as Key;
-    if (!SDK[key]) {
-      SDK[key] = injection[key] as any;
+    const key = k as keyof T;
+    if (!target[key]) {
+      target[key] = injection[key] as any;
     }
   }
+};
+
+export const injectDesignModeSDK = (injection: DesignModeSDKInjection): void => {
+  inject(SDK, injection);
 };
 
 export const injectRunModeSDK = (injection: RunModeSDKInjection): void => {
-  /* eslint-disable */
-  for (const k of Object.keys(injection)) {
-    /* eslint-enable */
-    type Key = keyof RunModeSDKInjection;
-    const key = k as Key;
-    if (!SDK[key]) {
-      SDK[key] = injection[key] as any;
-    }
-  }
+  inject(SDK, injection);
 };
+
+export const injectRunModeBuiltIns = (injection: RunModeBuiltIns): void => {
+  inject(SDK, injection);
+};
+
+export const injectDesignModeBuiltIns = (injection: DesignModeBuiltIns): void => {
+  inject(SDK, injection);
+};
+
+if (typeof (window as any).readyInject === 'function') {
+  (window as any).readyInject(injectRunModeSDK);
+}

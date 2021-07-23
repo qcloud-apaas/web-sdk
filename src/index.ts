@@ -2,6 +2,7 @@ import React from 'react';
 import EventEmitter from 'eventemitter3';
 import {
   SDK as SDKType,
+  BuiltInComponent as BuiltInComponentType,
   CanvasContextData,
   ContainerContextData,
   DataFormContextData,
@@ -13,6 +14,7 @@ import { createBEM } from './bem';
 import { loadUmdLib, loadCss } from './load';
 import { transMetaVal2PureVal, transObjectKeys } from './trans';
 import { useDynamicValue } from './use-dynamic-value';
+import './inject';
 
 export * from './types';
 
@@ -34,3 +36,5 @@ export const SDK: SDKType = ({
   transObjectKeys,
   useDynamicValue,
 } as unknown) as SDKType;
+
+export const BuiltInComponent: BuiltInComponentType = {} as any;

@@ -20,6 +20,8 @@ import {
   FetchRecordsByConditionMethod,
 } from './fetch';
 import { UseEventHandlers } from './use-event-handlers';
+import { DynamicDataSource } from './properties';
+import { DesignModeBuiltIns, RunModeBuiltIns } from './builtins';
 
 export * from './component-key';
 export * from './container-context-data';
@@ -29,6 +31,8 @@ export * from './jsx-component';
 export * from './panel-config';
 export * from './trans';
 export * from './use-event-handlers';
+
+export { DesignModeBuiltIns, RunModeBuiltIns };
 
 export type CommonSDK = {
   CanvasContext: React.Context<CanvasContextData>;
@@ -64,8 +68,11 @@ export type RunModeSDKInjection = {
   deleteRecords: DeleteRecordsMethod;
   modifyRecordAttribute: ModifyRecordAttributeMethod;
   fetchRecordsByCondition: FetchRecordsByConditionMethod;
+  useDataSource<T = any>(dataSource: DynamicDataSource, params: any): Promise<T>;
 };
 
 export type RunModeSDK = CommonSDK & RunModeSDKInjection;
 
 export type SDK = DesignModeSDK & RunModeSDK;
+
+export type BuiltInComponent = DesignModeBuiltIns & RunModeBuiltIns;
