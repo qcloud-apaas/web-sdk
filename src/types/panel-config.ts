@@ -47,13 +47,38 @@ export type DynamicFormField<V = Record<string, any>> = {
   tooltip?: string;
   type?: DynamicFormPropType;
   required?: boolean;
+  /*
+   * 传递属性组件的props
+   */
   props?: Record<string, any>;
+  /*
+   * 传递属性组件的props
+   */
+  visible?: boolean;
   validators?: {
     validator: (value: any, values: Partial<V>) => boolean;
     message: string;
   }[];
+  /*
+   * @alias useVisible
+   */
   dependOn?: (values: any, opt: { hasAncestorComponent: (name: string) => boolean }) => boolean;
+  /*
+   * @alias useParams
+   */
   useParams?: (values: any) => any;
+  /*
+   * 动态组件props
+   * @param fieldProps 当前组件的props
+   * @param opt 当前上下文配置
+   */
+  useProps?: (fieldProps: any, opt: { hasAncestorComponent: (name: string) => boolean }) => any;
+  /*
+   * 动态组件props
+   * @param fieldProps 当前组件的props
+   * @param opt 当前上下文配置
+   */
+  useVisible?: (fieldProps: any, opt: { hasAncestorComponent: (name: string) => boolean }) => boolean;
 };
 
 export type DynamicFormGroup = {
