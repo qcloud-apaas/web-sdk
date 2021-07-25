@@ -74,7 +74,11 @@ export type DataFormContextData = ContainerContextData & {
   /**
    * 对react-final-form-hooks的useField方法的封装
    */
-  useField: (fieldSource: { code: string; apiKey: string }, validators: Record<string, any>) => FieldRenderProps;
+  useField: (fieldProps: {
+    compId: string;
+    fieldSource: { code: string; apiKey: string };
+    validators: Record<string, any>;
+  }) => FieldRenderProps;
   /**
    * 表单是否提交中
    */
