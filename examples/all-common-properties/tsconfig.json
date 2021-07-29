@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@qcloud-apaas/web-sdk": ["."]
+    }
+  },
+  "include": ["src/**/*"]
+}
