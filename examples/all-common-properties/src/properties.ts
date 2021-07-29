@@ -171,32 +171,6 @@ const config: PanelConfig = {
       },
     },
     {
-      label: '国家代码',
-      key: 'countryCode',
-      type: 'number',
-      component: 'Select',
-      props: {
-        type: 'simulate',
-        appearance: 'button',
-        size: 'full',
-        defaultValue: 'CN',
-        options: [
-          {
-            text: '+86',
-            value: '中国(CN)',
-          },
-          {
-            text: '+81',
-            value: '日本(JP)',
-          },
-          {
-            text: '+1',
-            value: '美国(USA)',
-          },
-        ],
-      },
-    },
-    {
       label: '默认值',
       key: 'defaultValue',
       type: 'defaultValue',
@@ -214,18 +188,7 @@ const config: PanelConfig = {
   groups: [
     {
       title: '基本属性',
-      items: [
-        'compId',
-        'name',
-        'sex',
-        'age',
-        'hobbies',
-        'countryCode',
-        'fileSize',
-        'switcher',
-        'rendering',
-        'dateDisplay',
-      ],
+      items: ['compId', 'name', 'sex', 'age', 'hobbies', 'fileSize', 'switcher', 'rendering', 'dateDisplay'],
     },
     { title: '数据属性', items: ['defaultValue', 'verifiableRule', 'errorMsg', 'verifyFields'] },
     { title: '交互属性', items: ['actionList'] },
