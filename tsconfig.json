@@ -1,12 +1,10 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
-    "noImplicitThis": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "sourceMap": true,
     "inlineSources": true,
-    "jsx": "react-jsx",
+    "jsx": "react",
     "module": "ESNext",
     "moduleResolution": "node",
     "target": "es5",
@@ -18,11 +16,13 @@
     "paths": {
       "*": [
         "./types/*"
-      ]
+      ],
+      "@qcloud-apaas/web-sdk": ["."]
     }
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "examples/**/*"
   ],
   "exclude": [
     "src/**/__tests__"

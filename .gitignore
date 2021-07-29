@@ -104,3 +104,6 @@ crashlytics-build.properties
 
 # vim
 *.swp
+
+# examples package-lock.json
+examples/**/package-lock.json
