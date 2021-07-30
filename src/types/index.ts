@@ -33,6 +33,7 @@ export * from './panel-config';
 export * from './trans';
 export * from './use-event-handlers';
 export * from './model';
+export * from './properties';
 
 export { DesignModeBuiltIns, RunModeBuiltIns };
 

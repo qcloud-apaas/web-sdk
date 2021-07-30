@@ -11,20 +11,42 @@ export type DataSourceCondition = {
   Connector: 'AND' | 'OR';
 };
 
-export type DataSourceParams = {
-  Params: any;
+export type DataSourceRequestParams = {
+  Params?: any;
   Filter: {
-    Condition: DataSourceCondition;
-    Option: {
+    Condition?: DataSourceCondition;
+    Option?: {
       Offset: number;
       Limit: number;
-      OrderBy: {
+      OrderBy?: {
         FieldCode: string;
         Order: 'DESC' | 'ASC';
-        Count: boolean;
       };
+      Count?: boolean;
     };
   };
+};
+
+export type DataSourceRecordItem = {
+  recordId: string;
+  fieldValueMap: Record<string, any>;
+  entityCode?: string;
+  entityApiKey?: string;
+};
+
+export type DataSourceObjectListResponse = {
+  records: DataSourceRecordItem[];
+  total: number;
+};
+
+export type DataSourceJsonSchemaResponse<T = any> = {
+  response: T;
+  matchReponse: any;
+};
+
+export type DataSourceResponse = {
+  databaseResponse: DataSourceObjectListResponse;
+  flowResponse: (DataSourceObjectListResponse & DataSourceJsonSchemaResponse)[];
 };
 
 /**
@@ -55,4 +77,7 @@ export type DeleteRecordsMethod = (data: MetaDataApiParams & { recordIds: string
  */
 export type FetchRecordsByConditionMethod = (data: MetaDataApiParams) => Promise<Record<string, any>>;
 
-export type FetchByDataSourceMethod = <T = any>(dataSource: DynamicDataSource, params?: DataSourceParams) => Promise<T>;
+export type FetchByDataSourceMethod = <T = any>(
+  dataSource: DynamicDataSource,
+  params?: DataSourceRequestParams,
+) => Promise<T>;
