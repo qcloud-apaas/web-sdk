@@ -21,6 +21,7 @@ export type DataSourceParams = {
       OrderBy: {
         FieldCode: string;
         Order: 'DESC' | 'ASC';
+        Count: boolean;
       };
     };
   };
