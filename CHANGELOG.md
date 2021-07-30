@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.6...v0.1.7) (2021-07-30)
+
+
+### Features
+
+* **datasource:** fetch datasource api ([a68f7e9](https://github.com/qcloud-apaas/web-sdk/commit/a68f7e92fd067e9c66fb531e9c0a5eb631ef293d))
+
 ### [0.1.6](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.5...v0.1.6) (2021-07-30)
 
 
