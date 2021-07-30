@@ -18,10 +18,11 @@ import {
   DeleteRecordsMethod,
   ModifyRecordAttributeMethod,
   FetchRecordsByConditionMethod,
+  FetchByDataSourceMethod,
 } from './fetch';
 import { UseEventHandlers } from './use-event-handlers';
-import { DynamicDataSource } from './properties';
 import { DesignModeBuiltIns, RunModeBuiltIns } from './builtins';
+import { UseDataSourceApi } from './properties';
 
 export * from './component-key';
 export * from './container-context-data';
@@ -31,6 +32,7 @@ export * from './jsx-component';
 export * from './panel-config';
 export * from './trans';
 export * from './use-event-handlers';
+export * from './model';
 
 export { DesignModeBuiltIns, RunModeBuiltIns };
 
@@ -54,6 +56,7 @@ export type CommonSDK = {
 };
 
 export type DesignModeSDKInjection = {
+  useDataSource: UseDataSourceApi;
   [key: string]: any;
 };
 
@@ -68,7 +71,7 @@ export type RunModeSDKInjection = {
   deleteRecords: DeleteRecordsMethod;
   modifyRecordAttribute: ModifyRecordAttributeMethod;
   fetchRecordsByCondition: FetchRecordsByConditionMethod;
-  useDataSource<T = any>(dataSource: DynamicDataSource, params: any): Promise<T>;
+  fetchByDataSource: FetchByDataSourceMethod;
 };
 
 export type RunModeSDK = CommonSDK & RunModeSDKInjection;

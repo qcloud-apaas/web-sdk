@@ -1,7 +1,30 @@
+import { DynamicDataSource } from './properties';
+
 export type MetaDataApiParams = {
   appCode: string;
   entityApiKey: string;
   [key: string]: any;
+};
+
+export type DataSourceCondition = {
+  Conditions: DataSourceCondition[];
+  Connector: 'AND' | 'OR';
+};
+
+export type DataSourceParams = {
+  Params: any;
+  Filter: {
+    Condition: DataSourceCondition;
+    Option: {
+      Offset: number;
+      Limit: number;
+      OrderBy: {
+        FieldCode: string;
+        Order: 'DESC' | 'ASC';
+        Count: boolean;
+      };
+    };
+  };
 };
 
 /**
@@ -31,3 +54,5 @@ export type DeleteRecordsMethod = (data: MetaDataApiParams & { recordIds: string
  * @param data 查询条件
  */
 export type FetchRecordsByConditionMethod = (data: MetaDataApiParams) => Promise<Record<string, any>>;
+
+export type FetchByDataSourceMethod = <T = any>(dataSource: DynamicDataSource, params?: DataSourceParams) => Promise<T>;
