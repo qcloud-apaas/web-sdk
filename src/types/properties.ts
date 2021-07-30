@@ -8,7 +8,7 @@ export interface DynamicDataSource {
   flowEntityCode: string;
   sysField: boolean;
   type: 'flow' | 'context' | 'database';
-  variableType: 'object' | 'objectList' | 'jsonSchema';
+  variableType: ObjectVariableType;
   fields: Field[];
 }
 
@@ -20,3 +20,5 @@ export type DesignDataSourceResult = {
 };
 
 export type UseDataSourceApi = (dataSource: DynamicDataSource) => DesignDataSourceResult;
+
+export type ObjectVariableType = 'object' | 'objectList' | 'jsonSchema';

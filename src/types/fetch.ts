@@ -1,4 +1,4 @@
-import { DynamicDataSource } from './properties';
+import { DynamicDataSource, ObjectVariableType } from './properties';
 
 export type MetaDataApiParams = {
   appCode: string;
@@ -35,6 +35,7 @@ export type DataSourceRecordItem = {
 };
 
 export type DataSourceObjectListResponse = {
+  variableType?: ObjectVariableType;
   records: DataSourceRecordItem[];
   total: number;
 };
@@ -77,7 +78,7 @@ export type DeleteRecordsMethod = (data: MetaDataApiParams & { recordIds: string
  */
 export type FetchRecordsByConditionMethod = (data: MetaDataApiParams) => Promise<Record<string, any>>;
 
-export type FetchByDataSourceMethod = <T = any>(
+export type FetchByDataSourceMethod = <T = DataSourceResponse>(
   dataSource: DynamicDataSource,
   params?: DataSourceRequestParams,
 ) => Promise<T>;
