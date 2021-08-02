@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.8...v0.1.9) (2021-08-02)
+
+
+### Features
+
+* **canvas:** add useCanvas api ([69eba01](https://github.com/qcloud-apaas/web-sdk/commit/69eba018b56f875288bd88ca9979d12e51cf38fe))
+* **observer:** add componentState api ([fbf6b57](https://github.com/qcloud-apaas/web-sdk/commit/fbf6b57d6bf924942a32098f795ddc4e0c4100db))
+
 ### [0.1.8](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.7...v0.1.8) (2021-07-30)
 
 ### [0.1.7](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.6...v0.1.7) (2021-07-30)
