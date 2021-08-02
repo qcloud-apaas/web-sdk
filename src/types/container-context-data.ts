@@ -1,5 +1,6 @@
 import { FormApi } from 'final-form';
 import { FieldRenderProps } from 'react-final-form-hooks';
+import { CanvasMode, CanvasSize } from './canvas';
 
 export type ControlSetting = {
   created?: boolean; // 组件创建控制器，用于控制组件内部创建动作
@@ -145,17 +146,6 @@ export type ListViewRecordContextData = {
   evaluateExpression: (exp: string) => Promise<{ type: EvaluateExpressionResultType; value: any }>;
 };
 
-export enum CanvasSize {
-  pc = 'pc',
-  pad = 'pad',
-  mobile = 'mobile',
-}
-
-export enum CanvasMode {
-  design = 'design',
-  run = 'run',
-}
-
 export type CanvasContextData = {
   /**
    * 画布尺寸
@@ -165,6 +155,15 @@ export type CanvasContextData = {
    * 画布模式，运行态、设计态
    */
   mode: CanvasMode;
+  /**
+   * 当前页面编码
+   */
+  pageCode: string;
+  /**
+   * @deprecated
+   * 当前页面编码
+   */
+  pageKey: string;
   /**
    * 返回整个画布的上下文数据，仅运行态使用
    */
