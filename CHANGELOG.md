@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.9...v0.1.10) (2021-08-03)
+
+
+### Features
+
+* **observer:** add useModel api ([cc5a528](https://github.com/qcloud-apaas/web-sdk/commit/cc5a528fa821badca7591e080418493597f5b257))
+
 ### [0.1.9](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.8...v0.1.9) (2021-08-02)
 
 
