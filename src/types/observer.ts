@@ -24,15 +24,10 @@ declare function UseComponentSubscriberApi<V>(callback: UseComponentSubscriberCa
 export type UseComponentStateApi = typeof UseComponentState;
 export type UseComponentSubscriberApi = typeof UseComponentSubscriber;
 
-export type UseModelApi<V = any, M = any> = (
+export type UseModelApi<V = any> = (
   componentKey: string,
-  initial?: {
-    value: V;
-    meta: M;
-  },
+  initialValue?: V,
 ) => {
   value: V;
   onChange: (val: V) => void;
-  meta: M;
-  onMetaChange: (meta: M) => void;
 };
