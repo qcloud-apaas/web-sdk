@@ -17,6 +17,7 @@ export type DynamicFormBuildInComps =
   | 'EventEditor'
   | 'Switch'
   | 'FieldSource'
+  | 'FieldSelect'
   | 'HandleEvent'
   | 'DefaultValue'
   | 'ActionList'
@@ -40,7 +41,7 @@ export type DynamicFormPropType =
   | 'defaultValue'
   | 'actionList'
   | 'dataSource'
-  | 'componentSelect';
+  | 'componentRef';
 
 export type DynamicFormField<V = Record<string, any>> = {
   key: string;
