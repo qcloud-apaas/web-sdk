@@ -24,7 +24,7 @@ import { UseEventHandlers } from './use-event-handlers';
 import { DesignModeBuiltIns, RunModeBuiltIns } from './builtins';
 import { UseDataSourceApi } from './properties';
 import { UseCanvasApi } from './canvas';
-import { UseComponentStateApi, UseComponentSubscriberApi } from './observer';
+import { UseComponentStateApi, UseComponentSubscriberApi, UseModelApi } from './observer';
 
 export * from './component-key';
 export * from './container-context-data';
@@ -80,6 +80,7 @@ export type RunModeSDKInjection = {
   fetchByDataSource: FetchByDataSourceMethod;
   useComponentState: UseComponentStateApi;
   useComponentSubscriber: UseComponentSubscriberApi;
+  useModel: UseModelApi;
 };
 
 export type RunModeSDK = CommonSDK & RunModeSDKInjection;
