@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.11](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.10...v0.1.11) (2021-08-03)
+
+
+### Features
+
+* **eventbus:** add useEventBus api ([ad5cea8](https://github.com/qcloud-apaas/web-sdk/commit/ad5cea85294fb3ecf4cd17adc1dd004ff0cac79b))
+
 ### [0.1.10](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.9...v0.1.10) (2021-08-03)
 
 
