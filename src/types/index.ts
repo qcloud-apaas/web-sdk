@@ -23,6 +23,9 @@ import {
 import { UseEventHandlers } from './use-event-handlers';
 import { DesignModeBuiltIns, RunModeBuiltIns } from './builtins';
 import { UseDataSourceApi } from './properties';
+import { UseCanvasApi } from './canvas';
+import { UseComponentStateApi, UseComponentSubscriberApi, UseModelApi } from './observer';
+import { UseEventBusApi } from './eventbus';
 
 export * from './component-key';
 export * from './container-context-data';
@@ -33,6 +36,9 @@ export * from './panel-config';
 export * from './trans';
 export * from './use-event-handlers';
 export * from './model';
+export * from './properties';
+export * from './canvas';
+export * from './observer';
 
 export { DesignModeBuiltIns, RunModeBuiltIns };
 
@@ -53,6 +59,7 @@ export type CommonSDK = {
   transMetaVal2PureVal: typeof transMetaVal2PureVal;
   transObjectKeys: typeof transObjectKeys;
   useDynamicValue: typeof useDynamicValue;
+  useCanvas: UseCanvasApi;
 };
 
 export type DesignModeSDKInjection = {
@@ -72,6 +79,10 @@ export type RunModeSDKInjection = {
   modifyRecordAttribute: ModifyRecordAttributeMethod;
   fetchRecordsByCondition: FetchRecordsByConditionMethod;
   fetchByDataSource: FetchByDataSourceMethod;
+  useComponentState: UseComponentStateApi;
+  useComponentSubscriber: UseComponentSubscriberApi;
+  useModel: UseModelApi;
+  useEventBus: UseEventBusApi;
 };
 
 export type RunModeSDK = CommonSDK & RunModeSDKInjection;

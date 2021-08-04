@@ -17,6 +17,7 @@ export type DynamicFormBuildInComps =
   | 'EventEditor'
   | 'Switch'
   | 'FieldSource'
+  | 'FieldSelect'
   | 'HandleEvent'
   | 'DefaultValue'
   | 'ActionList'
@@ -24,7 +25,8 @@ export type DynamicFormBuildInComps =
   | 'StackLayout'
   | 'PageSetting'
   | 'SortRule'
-  | 'TreeOperatesSetting';
+  | 'TreeOperatesSetting'
+  | 'ComponentSelect';
 
 export type DynamicFormPropType =
   | 'string'
@@ -38,7 +40,8 @@ export type DynamicFormPropType =
   | 'fieldSource'
   | 'defaultValue'
   | 'actionList'
-  | 'dataSource';
+  | 'dataSource'
+  | 'componentRef';
 
 export type DynamicFormField<V = Record<string, any>> = {
   key: string;
@@ -61,10 +64,12 @@ export type DynamicFormField<V = Record<string, any>> = {
   }[];
   /*
    * @alias useVisible
+   * @deprecated
    */
   dependOn?: (values: any, opt: { hasAncestorComponent: (name: string) => boolean }) => boolean;
   /*
    * @alias useParams
+   * @deprecated
    */
   useParams?: (values: any) => any;
   /*
