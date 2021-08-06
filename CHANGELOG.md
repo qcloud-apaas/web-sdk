@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.13](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.12...v0.1.13) (2021-08-06)
+
+
+### Features
+
+* **slot:** add Builtin Slot Component ([c73f792](https://github.com/qcloud-apaas/web-sdk/commit/c73f7924ca29f523291b7e7c4f70f2cb8235289b))
+
 ### [0.1.12](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.11...v0.1.12) (2021-08-03)
 
 ### [0.1.11](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.10...v0.1.11) (2021-08-03)
