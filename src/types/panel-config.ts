@@ -1,5 +1,6 @@
 import { ForwardRefExoticComponent, PropsWithoutRef, RefAttributes } from 'react';
 import { ComponentKey } from './component-key';
+import { PageData } from './model';
 
 export type DynamicFormBuildInComps =
   | 'InputString'
@@ -26,7 +27,8 @@ export type DynamicFormBuildInComps =
   | 'PageSetting'
   | 'SortRule'
   | 'TreeOperatesSetting'
-  | 'ComponentSelect';
+  | 'ComponentSelect'
+  | 'Slot';
 
 export type DynamicFormPropType =
   | 'string'
@@ -41,7 +43,8 @@ export type DynamicFormPropType =
   | 'defaultValue'
   | 'actionList'
   | 'dataSource'
-  | 'componentRef';
+  | 'componentRef'
+  | 'slot';
 
 export type DynamicFormField<V = Record<string, any>> = {
   key: string;
@@ -96,10 +99,29 @@ export type PanelConfig = {
   groups: DynamicFormGroup[];
 };
 
+export type SlotTemplate = {
+  component: string;
+  slot: string;
+  props: any;
+  children: SlotTemplate[];
+};
+
+export type SlotsConfig = SlotTemplate[];
+
+export type HooksConfig = {
+  beforeCreate?: (props: any, pageData: any) => any;
+  created?: (props: any, pageData: any) => any;
+  beforeUpdate?: (newProps: any, oldProps: any, pageData: PageData) => any;
+  updated?: (props: any, pageData: any) => any;
+  beforeDestroy?: (props: any) => any;
+  destroyed?: (props: any) => any;
+};
+
 export type ComponentConfig = {
   key: ComponentKey; // 组件唯一标识
   title: string; // 组件名
   icon: string; // 组件图标
-  panelConfig: PanelConfig; // 属性面板配置
   component: ForwardRefExoticComponent<PropsWithoutRef<any> & RefAttributes<any>>; // 设计态组件
+  panelConfig: PanelConfig; // 属性面板配置
+  hooksConfig?: HooksConfig;
 };

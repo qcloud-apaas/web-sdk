@@ -20,3 +20,10 @@ export type Field = {
   type: number;
   uniqueFlag: string;
 };
+
+export type PageData = {
+  entities?: Entity[];
+  fields?: Field[];
+  componentsMap: Record<string, any>;
+  relationMap: Record<string, any>;
+};
