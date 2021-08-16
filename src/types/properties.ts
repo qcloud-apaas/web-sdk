@@ -22,3 +22,9 @@ export type DesignDataSourceResult = {
 export type UseDataSourceApi = (dataSource: DynamicDataSource) => DesignDataSourceResult;
 
 export type ObjectVariableType = 'object' | 'objectList' | 'jsonSchema';
+
+export type UsePropertiesApi<P = any> = () => {
+  properties: P;
+  setProperties(props: P): void;
+  entities: Entity[];
+};

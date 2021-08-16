@@ -24,9 +24,17 @@ declare function UseComponentSubscriberApi<V>(callback: UseComponentSubscriberCa
 export type UseComponentStateApi = typeof UseComponentState;
 export type UseComponentSubscriberApi = typeof UseComponentSubscriber;
 
+export type UseModelApiOptions<V> = {
+  initialValue: V;
+  fieldBinding?: {
+    code: string;
+    apiKey: string;
+  };
+};
+
 export type UseModelApi<V = any> = (
   componentKey: string,
-  initialValue?: V,
+  options?: UseModelApiOptions<V>,
 ) => {
   value: V;
   onChange: (val: V) => void;

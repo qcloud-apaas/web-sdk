@@ -17,6 +17,7 @@ import { useDynamicValue } from './use-dynamic-value';
 import './inject';
 
 export * from './types';
+export * from './constant';
 
 export const SDK: SDKType = ({
   CanvasContext: React.createContext<CanvasContextData>(null),

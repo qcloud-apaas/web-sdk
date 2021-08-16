@@ -1,0 +1,7 @@
+{
+    "name": "@qcloud-apaas/web-sdk",
+    "main": "es/index.d.ts",
+    "out": "bundle/sdk.ts",
+    "baseDir": ".",
+    "newline": "\\n"
+}

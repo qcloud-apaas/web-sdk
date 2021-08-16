@@ -8,17 +8,19 @@ export type ControlSetting = {
   sysField?: boolean; // 是否填充系统字段
 };
 
-export type ComponentProperty = {
+export declare type ComponentProperty<T = any> = {
   control?: ControlSetting;
+  props?: T;
+  component?: string;
 };
-
-export type ComponentData = {
+export declare type ComponentData = {
   code: string;
   componentType?: number;
   index?: number;
   parentCode: string;
   type?: string;
   property: ComponentProperty;
+  updateProperty(property: Partial<ComponentProperty>): void;
 };
 
 /**
