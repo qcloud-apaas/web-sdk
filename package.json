@@ -27,6 +27,7 @@
     "eslint:fix": "eslint --ext ts,tsx src --fix",
     "stylelint": "stylelint src/**/*.scss",
     "stylelint:fix": "stylelint src/**/*.scss --fix",
+    "dts-bundle": "dts-bundle --configJson dts-bundle.json",
     "pack": "webpack",
     "release": "standard-version"
   },
@@ -44,6 +45,7 @@
     "axios": "^0.21.1",
     "babel-loader": "^8.2.2",
     "commitizen": "^4.1.2",
+    "dts-bundle": "^0.7.3",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
