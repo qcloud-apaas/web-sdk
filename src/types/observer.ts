@@ -25,7 +25,7 @@ export type UseComponentStateApi = typeof UseComponentState;
 export type UseComponentSubscriberApi = typeof UseComponentSubscriber;
 
 export type UseModelApiOptions<V> = {
-  initialValue: V;
+  initialValue?: V;
   fieldBinding?: {
     code: string;
     apiKey: string;
