@@ -94,16 +94,19 @@ export type DynamicFormGroup = {
   items: string[];
 };
 
-export type PanelConfig = {
-  fields: DynamicFormField[];
-  groups: DynamicFormGroup[];
-};
-
 export type SlotTemplate = {
   component: string;
   slot: string;
   props: any;
   children: SlotTemplate[];
+};
+
+export type DynamicSlotTemplate = SlotTemplate | ((props: any) => SlotTemplate);
+
+export type PanelConfig = {
+  fields: DynamicFormField[];
+  groups: DynamicFormGroup[];
+  slots?: DynamicSlotTemplate[];
 };
 
 export type SlotsConfig = SlotTemplate[];
