@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.14](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.13...v0.1.14) (2021-08-19)
+
+
+### Features
+
+* **properties:** add useProperties api ([809b311](https://github.com/qcloud-apaas/web-sdk/commit/809b311d614d987cd52c2ba860b990f294b5730a))
+* **slot:** add slotTemplate config ([25fa890](https://github.com/qcloud-apaas/web-sdk/commit/25fa890c05474235b1baf517c8f8ad40c551a9ce))
+* **useModel:** add useModel hook ([84c8260](https://github.com/qcloud-apaas/web-sdk/commit/84c8260742a0a7f0ce5acb163c8bed9522ffa188))
+
 ### [0.1.13](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.12...v0.1.13) (2021-08-06)
 
 
