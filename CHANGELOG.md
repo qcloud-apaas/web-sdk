@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.16](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.15...v0.1.16) (2021-08-21)
+
+
+### Features
+
+* **useDataSource:** DataSource subscriber ([72ca562](https://github.com/qcloud-apaas/web-sdk/commit/72ca562229f92708ac2b7e72508f15dd98ac97b4))
+
 ### [0.1.15](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.14...v0.1.15) (2021-08-21)
 
 
