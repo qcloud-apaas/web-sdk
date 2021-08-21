@@ -1,3 +1,4 @@
+import { DataSourceRequestParams, DataSourceResponse } from './fetch';
 import { Entity, Field } from './model';
 
 export interface DynamicDataSource {
@@ -12,14 +13,15 @@ export interface DynamicDataSource {
   fields: Field[];
 }
 
-export type DesignDataSourceResult = {
+export type DataSourceResult = {
   entities: Entity[];
   fields: Field[];
   selectedEntity: Entity;
   selectedEntityCode: string;
+  fetch<T = DataSourceResponse>(requestParams?: DataSourceRequestParams): Promise<T>;
 };
 
-export type UseDataSourceApi = (dataSource: DynamicDataSource) => DesignDataSourceResult;
+export type UseDataSourceApi = (dataSource: DynamicDataSource) => DataSourceResult;
 
 export type ObjectVariableType = 'object' | 'objectList' | 'jsonSchema';
 
