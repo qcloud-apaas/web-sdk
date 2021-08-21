@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.15](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.14...v0.1.15) (2021-08-21)
+
+
+### Features
+
+* **componentKey:** add Swiper key ([ec9a37a](https://github.com/qcloud-apaas/web-sdk/commit/ec9a37a0a2eac8b81d593dfe8be742137b5d25e8))
+* **slot:** add slots to properties ([12dcda0](https://github.com/qcloud-apaas/web-sdk/commit/12dcda0ea52d4984cfc3983623c4a5fcfdeb43b8))
+* **useDataSource:** runmode useDataSource ([f441d50](https://github.com/qcloud-apaas/web-sdk/commit/f441d5026ff07be93d2881e0a4778058e3db0484))
+
 ### [0.1.14](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.13...v0.1.14) (2021-08-19)
 
 
