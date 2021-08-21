@@ -6,6 +6,7 @@ export type ComponentKey =
   | 'StreamList' // 流式列表
   | 'ListView' // ListView
   | 'DataTree' // DataTree
+  | 'Swiper' // Swiper
   // 布局组件
   | 'Stack' // 容器
   | 'Grid' // 栅格
