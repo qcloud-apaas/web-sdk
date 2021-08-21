@@ -95,10 +95,10 @@ export type DynamicFormGroup = {
 };
 
 export type SlotTemplate = {
-  component: string;
+  component?: string;
   slot: string;
-  props: any;
-  children: SlotTemplate[];
+  props?: any;
+  children?: SlotTemplate[];
 };
 
 export type DynamicSlotTemplate = SlotTemplate | ((props: any) => SlotTemplate);

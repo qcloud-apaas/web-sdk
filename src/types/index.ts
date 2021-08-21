@@ -82,6 +82,7 @@ export type RunModeSDKInjection = {
   useComponentSubscriber: UseComponentSubscriberApi;
   useModel: UseModelApi;
   useEventBus: UseEventBusApi;
+  useDataSource: UseDataSourceApi;
 };
 
 export type RunModeSDK = CommonSDK & RunModeSDKInjection;
