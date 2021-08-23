@@ -53,6 +53,7 @@ export type DynamicFormField<V = Record<string, any>> = {
   tooltip?: string;
   type?: DynamicFormPropType;
   required?: boolean;
+  defaultValue?: any;
   /*
    * 传递属性组件的props
    */
@@ -97,6 +98,7 @@ export type DynamicFormGroup = {
 export type SlotTemplate = {
   component?: string;
   slot: string;
+  key?: string;
   props?: any;
   children?: SlotTemplate[];
 };
@@ -127,4 +129,5 @@ export type ComponentConfig = {
   component: ForwardRefExoticComponent<PropsWithoutRef<any> & RefAttributes<any>>; // 设计态组件
   panelConfig: PanelConfig; // 属性面板配置
   hooksConfig?: HooksConfig;
+  slotsConfig?: DynamicSlotTemplate | DynamicSlotTemplate[];
 };
