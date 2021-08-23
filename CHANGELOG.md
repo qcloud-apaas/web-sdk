@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.17](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.16...v0.1.17) (2021-08-23)
+
+
+### Features
+
+* **panelConfig:** field defaultValue ([74dad85](https://github.com/qcloud-apaas/web-sdk/commit/74dad85f3f41b2113f90747e56fd6357f911d3f0))
+
 ### [0.1.16](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.15...v0.1.16) (2021-08-21)
 
 
