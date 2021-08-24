@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.18](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.17...v0.1.18) (2021-08-24)
+
+
+### Features
+
+* **dynamicValue:** string type compact ([66b0256](https://github.com/qcloud-apaas/web-sdk/commit/66b0256e95c5cf0bcc14f18eac6689b4c36965e8))
+
 ### [0.1.17](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.16...v0.1.17) (2021-08-23)
 
 
