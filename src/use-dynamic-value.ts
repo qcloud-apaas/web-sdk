@@ -13,6 +13,10 @@ export const useDynamicValue = (config: DynamicValueConfig, opt: { rowIndex?: nu
   const lvrCtx = useContext(SDK.ListViewRecordContext);
   const [value, setValue] = useState(config?.type === DynamicValueTypes.Constant ? config.value : opt.defaultValue);
   useEffect(() => {
+    if (typeof config === 'string') {
+      setValue(config);
+      return;
+    }
     if (config?.type === DynamicValueTypes.Expression && config.value) {
       const { rowIndex } = opt;
       if (dgCtx && rowIndex >= 0) {

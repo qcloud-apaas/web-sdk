@@ -100,6 +100,7 @@ export type SlotTemplate = {
   slot: string;
   key?: string;
   props?: any;
+  code?: string;
   children?: SlotTemplate[];
 };
 
@@ -108,7 +109,7 @@ export type DynamicSlotTemplate = SlotTemplate | ((props: any) => SlotTemplate);
 export type PanelConfig = {
   fields: DynamicFormField[];
   groups: DynamicFormGroup[];
-  slots?: DynamicSlotTemplate[];
+  slots?: DynamicSlotTemplate | DynamicSlotTemplate[];
 };
 
 export type SlotsConfig = SlotTemplate[];
