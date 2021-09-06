@@ -24,6 +24,7 @@ export type ComponentKey =
   | 'DatePicker' // 时间选择器
   | 'InputNumber' // 数字输入框
   | 'RangeNumber' // 数字区间
+  | 'Search' // 搜索组件
   | 'UploadFile' // 文件上传
   | 'UploadImage' // 图片上传
   | 'Radio' // 单选框
