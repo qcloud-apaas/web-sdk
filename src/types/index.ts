@@ -22,7 +22,7 @@ import {
 } from './fetch';
 import { UseEventHandlers } from './use-event-handlers';
 import { DesignModeBuiltIns, RunModeBuiltIns } from './builtins';
-import { UseDataSourceApi } from './properties';
+import { UseDataSourceApi, UsePropertiesApi } from './properties';
 import { UseCanvasApi } from './canvas';
 import { UseComponentStateApi, UseComponentSubscriberApi, UseModelApi } from './observer';
 import { UseEventBusApi } from './eventbus';
@@ -64,14 +64,13 @@ export type CommonSDK = {
 
 export type DesignModeSDKInjection = {
   useDataSource: UseDataSourceApi;
+  useProperties: UsePropertiesApi;
   [key: string]: any;
 };
 
 export type DesignModeSDK = CommonSDK & DesignModeSDKInjection;
 
 export type RunModeSDKInjection = {
-  APP_CODE: string;
-  API_BASE: string;
   useEventHandlers: UseEventHandlers;
   request: AxiosInstance;
   createRecord: CreateRecordMethod;
@@ -83,6 +82,7 @@ export type RunModeSDKInjection = {
   useComponentSubscriber: UseComponentSubscriberApi;
   useModel: UseModelApi;
   useEventBus: UseEventBusApi;
+  useDataSource: UseDataSourceApi;
 };
 
 export type RunModeSDK = CommonSDK & RunModeSDKInjection;

@@ -1,10 +1,16 @@
 import React from 'react';
 
+export type SlotProps = {
+  slot: string;
+  [prop: string]: any;
+};
+
+declare class SlotComponent extends React.Component<SlotProps> {}
+
 export type DesignModeBuiltIns = {
-  DndContent: React.Component | ((props: any) => React.ReactElement);
-  [key: string]: React.Component | ((props: any) => React.ReactElement);
+  Slot: SlotComponent;
 };
 
 export type RunModeBuiltIns = {
-  [key: string]: React.Component | ((props: any) => React.ReactElement);
+  Slot: SlotComponent;
 };

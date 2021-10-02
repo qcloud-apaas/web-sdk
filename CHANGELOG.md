@@ -2,6 +2,68 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.19](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.18...v0.1.19) (2021-09-06)
+
+
+### Features
+
+* **componentKey:** add Swiper key ([758d863](https://github.com/qcloud-apaas/web-sdk/commit/758d8632e2e7d4eb197d38f15dcd51f2b4441141))
+* **dynamicValue:** string type compact ([5a7fe8b](https://github.com/qcloud-apaas/web-sdk/commit/5a7fe8bedccebe95be4dc3c4a7829c63c377affa))
+* **panelConfig:** field defaultValue ([8bfe37a](https://github.com/qcloud-apaas/web-sdk/commit/8bfe37a14646023cdf696616077cfde0b60f19c2))
+* **properties:** add useProperties api ([3735551](https://github.com/qcloud-apaas/web-sdk/commit/37355510745548911be303141aa349ed91dec89f))
+* **slot:** add Builtin Slot Component ([0b6d8aa](https://github.com/qcloud-apaas/web-sdk/commit/0b6d8aa04e6d3a04607d36a73cf99d7a7ca9ae7a))
+* **slot:** add slots to properties ([fc91deb](https://github.com/qcloud-apaas/web-sdk/commit/fc91deb9dd69f2eb248ac8c80286d6d95315b7a4))
+* **slot:** add slotTemplate config ([50681d6](https://github.com/qcloud-apaas/web-sdk/commit/50681d6a04d34f6a996bab0cb26dc3850dbee14e))
+* **useDataSource:** DataSource subscriber ([9ef8c53](https://github.com/qcloud-apaas/web-sdk/commit/9ef8c5358442b41331e9b602bb67a7999d5dabbe))
+* **useDataSource:** runmode useDataSource ([42bfba6](https://github.com/qcloud-apaas/web-sdk/commit/42bfba63123e476f63a651d3b421a61c861f3dc0))
+* **useModel:** add useModel hook ([c637c5e](https://github.com/qcloud-apaas/web-sdk/commit/c637c5ee9c22700de667a2fcfea769fe2f4af5e9))
+
+### [0.1.18](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.17...v0.1.18) (2021-08-24)
+
+
+### Features
+
+* **dynamicValue:** string type compact ([66b0256](https://github.com/qcloud-apaas/web-sdk/commit/66b0256e95c5cf0bcc14f18eac6689b4c36965e8))
+
+### [0.1.17](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.16...v0.1.17) (2021-08-23)
+
+
+### Features
+
+* **panelConfig:** field defaultValue ([74dad85](https://github.com/qcloud-apaas/web-sdk/commit/74dad85f3f41b2113f90747e56fd6357f911d3f0))
+
+### [0.1.16](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.15...v0.1.16) (2021-08-21)
+
+
+### Features
+
+* **useDataSource:** DataSource subscriber ([72ca562](https://github.com/qcloud-apaas/web-sdk/commit/72ca562229f92708ac2b7e72508f15dd98ac97b4))
+
+### [0.1.15](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.14...v0.1.15) (2021-08-21)
+
+
+### Features
+
+* **componentKey:** add Swiper key ([ec9a37a](https://github.com/qcloud-apaas/web-sdk/commit/ec9a37a0a2eac8b81d593dfe8be742137b5d25e8))
+* **slot:** add slots to properties ([12dcda0](https://github.com/qcloud-apaas/web-sdk/commit/12dcda0ea52d4984cfc3983623c4a5fcfdeb43b8))
+* **useDataSource:** runmode useDataSource ([f441d50](https://github.com/qcloud-apaas/web-sdk/commit/f441d5026ff07be93d2881e0a4778058e3db0484))
+
+### [0.1.14](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.13...v0.1.14) (2021-08-19)
+
+
+### Features
+
+* **properties:** add useProperties api ([809b311](https://github.com/qcloud-apaas/web-sdk/commit/809b311d614d987cd52c2ba860b990f294b5730a))
+* **slot:** add slotTemplate config ([25fa890](https://github.com/qcloud-apaas/web-sdk/commit/25fa890c05474235b1baf517c8f8ad40c551a9ce))
+* **useModel:** add useModel hook ([84c8260](https://github.com/qcloud-apaas/web-sdk/commit/84c8260742a0a7f0ce5acb163c8bed9522ffa188))
+
+### [0.1.13](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.12...v0.1.13) (2021-08-06)
+
+
+### Features
+
+* **slot:** add Builtin Slot Component ([c73f792](https://github.com/qcloud-apaas/web-sdk/commit/c73f7924ca29f523291b7e7c4f70f2cb8235289b))
+
 ### [0.1.12](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.11...v0.1.12) (2021-08-03)
 
 ### [0.1.11](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.10...v0.1.11) (2021-08-03)
