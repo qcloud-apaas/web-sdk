@@ -123,6 +123,24 @@ export type HooksConfig = {
   destroyed?: (props: any) => any;
 };
 
+export type ComponentActionParamItem = {
+  label: string;
+  key: string;
+  type: string;
+  component?: string | React.Component | ((props: any) => React.ReactElement);
+};
+
+export type ComponentActionDefinition = {
+  label: string;
+  key: string;
+  params?: ComponentActionParamItem[];
+};
+
+export type ComponentStateDefinition = {
+  label: string;
+  key: string;
+};
+
 export type ComponentConfig = {
   key: ComponentKey; // 组件唯一标识
   title: string; // 组件名
@@ -131,4 +149,6 @@ export type ComponentConfig = {
   panelConfig: PanelConfig; // 属性面板配置
   hooksConfig?: HooksConfig;
   slotsConfig?: DynamicSlotTemplate | DynamicSlotTemplate[];
+  actionsConfig?: ComponentActionDefinition[];
+  statesConfig?: ComponentStateDefinition[];
 };
