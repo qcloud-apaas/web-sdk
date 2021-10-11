@@ -19,6 +19,7 @@ export type ComponentKey =
   | 'LinkBlock'
   | 'Column'
   | 'Alignment' // 对齐方式
+  | 'Stepper' // 步骤条组件
   // 输入组件
   | 'Input' // 单行输入框
   | 'TextArea' // 多行输入框
@@ -41,6 +42,7 @@ export type ComponentKey =
   | 'Local' // 地区选择
   | 'Country' // 国家选择
   | 'ReferenceSelector' // ReferenceSelector选择器
+  | 'DateRangePicker' // DateRangePicker日期区间选择
   // 通用组件
   | 'Button' // 按钮
   | 'Text' // 文本
