@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.21](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.20...v0.1.21) (2021-10-11)
+
+
+### Features
+
+* **componentkey:** add stepper daterangepicker ([fd8bdf2](https://github.com/qcloud-apaas/web-sdk/commit/fd8bdf27e27a184935f76efb1a37a61c86dfb58f))
+
 ### [0.1.20](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.19...v0.1.20) (2021-10-02)
 
 ### [0.1.19](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.18...v0.1.19) (2021-09-06)
