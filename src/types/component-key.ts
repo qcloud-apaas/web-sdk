@@ -43,6 +43,7 @@ export type ComponentKey =
   | 'Country' // 国家选择
   | 'ReferenceSelector' // ReferenceSelector选择器
   | 'DateRangePicker' // DateRangePicker日期区间选择
+  | 'DataView' // DataView 数据容器
   // 通用组件
   | 'Button' // 按钮
   | 'Text' // 文本
