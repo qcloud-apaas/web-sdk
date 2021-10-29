@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.22](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.21...v0.1.22) (2021-10-29)
+
+
+### Features
+
+* add componentkey dataview ([ec7d1ab](https://github.com/qcloud-apaas/web-sdk/commit/ec7d1ab1d09a9050c7f00937f5511f3909b3dd5b))
+* sdkinjection ([66232d7](https://github.com/qcloud-apaas/web-sdk/commit/66232d7a98691acc1e288a32596095e80e992b49))
+
 ### [0.1.21](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.20...v0.1.21) (2021-10-11)
 
 
