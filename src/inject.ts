@@ -6,9 +6,7 @@ const inject = <T, I extends Partial<T>>(target: T, injection: I) => {
   for (const k of Object.keys(injection)) {
     /* eslint-enable */
     const key = k as keyof T;
-    if (!target[key]) {
-      target[key] = injection[key] as any;
-    }
+    target[key] = injection[key] as any;
   }
 };
 
