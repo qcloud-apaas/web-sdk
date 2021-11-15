@@ -11,6 +11,7 @@ export type DynamicFormBuildInComps =
   | 'ColumnsSetting'
   | 'RadioGroup'
   | 'CheckboxGroup'
+  | 'Expression'
   | 'ExpressionEditor'
   | 'Select'
   | 'VerifyFields'
@@ -62,6 +63,10 @@ export type DynamicFormField<V = Record<string, any>> = {
    * 传递属性组件的props
    */
   visible?: boolean;
+  /*
+   * 是否开启表达式输入
+   */
+  expression?: boolean;
   validators?: {
     validator: (value: any, values: Partial<V>) => boolean;
     message: string;

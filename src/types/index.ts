@@ -4,7 +4,6 @@ import { AxiosInstance } from 'axios';
 import { createBEM } from '../bem';
 import { loadUmdLib, loadCss } from '../load';
 import { transMetaVal2PureVal, transObjectKeys } from '../trans';
-import { useDynamicValue } from '../use-dynamic-value';
 import {
   CanvasContextData,
   ContainerContextData,
@@ -26,6 +25,7 @@ import { UseDataSourceApi, UsePropertiesApi } from './properties';
 import { UseCanvasApi } from './canvas';
 import { UseComponentStateApi, UseComponentSubscriberApi, UseModelApi } from './observer';
 import { UseEventBusApi } from './eventbus';
+import { UseDynamicValueApi } from './dynamic-value';
 
 export * from './component-key';
 export * from './container-context-data';
@@ -58,7 +58,6 @@ export type CommonSDK = {
   loadCss: typeof loadCss;
   transMetaVal2PureVal: typeof transMetaVal2PureVal;
   transObjectKeys: typeof transObjectKeys;
-  useDynamicValue: typeof useDynamicValue;
   useCanvas: UseCanvasApi;
 };
 
@@ -83,6 +82,7 @@ export type RunModeSDKInjection = {
   useModel: UseModelApi;
   useEventBus: UseEventBusApi;
   useDataSource: UseDataSourceApi;
+  useDynamicValue: UseDynamicValueApi;
 };
 
 export type RunModeSDK = CommonSDK & RunModeSDKInjection;

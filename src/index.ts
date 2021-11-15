@@ -13,7 +13,6 @@ import {
 import { createBEM } from './bem';
 import { loadUmdLib, loadCss } from './load';
 import { transMetaVal2PureVal, transObjectKeys } from './trans';
-import { useDynamicValue } from './use-dynamic-value';
 import './inject';
 
 export * from './types';
@@ -29,13 +28,11 @@ export const SDK: SDKType = ({
   StackContext: React.createContext<ContainerContextData>(null),
   GridContext: React.createContext<ContainerContextData>(null),
   TabsContext: React.createContext<ContainerContextData>(null),
-  eventBus: new EventEmitter(),
   createBEM,
   loadUmdLib,
   loadCss,
   transMetaVal2PureVal,
   transObjectKeys,
-  useDynamicValue,
 } as unknown) as SDKType;
 
 export const BuiltInComponent: BuiltInComponentType = {} as any;
