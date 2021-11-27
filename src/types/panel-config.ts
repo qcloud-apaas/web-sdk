@@ -29,6 +29,7 @@ export type DynamicFormBuildInComps =
   | 'SortRule'
   | 'TreeOperatesSetting'
   | 'ComponentSelect'
+  | 'AutoValue'
   | 'Slot';
 
 export type DynamicFormPropType =
