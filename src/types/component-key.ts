@@ -57,6 +57,7 @@ export type ComponentKey =
   | 'Positioning' // 定位组件
   | 'Meeting' // 会议组件
   | 'Jsx' // JSX代码组件
+  | 'VideoPlayer' // 视频播放组件
   // 审批按钮
   | 'AgreeBtn' // 同意
   | 'ApplyBtn' // 申请
