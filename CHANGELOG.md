@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.23](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.22...v0.1.23) (2021-12-14)
+
+
+### Features
+
+* **componentKey:** add iframe key ([9967253](https://github.com/qcloud-apaas/web-sdk/commit/9967253583b022b5056be404b97985b4925ad4d4))
+* **service:** add service types ([c4accdc](https://github.com/qcloud-apaas/web-sdk/commit/c4accdcb941853fed79dc199d20cd5395e251cd1))
+* add component AutoValue ([c33d871](https://github.com/qcloud-apaas/web-sdk/commit/c33d871c69e694b2e71afc88974728c269792547))
+* add VideoPlayer component ([f92db3d](https://github.com/qcloud-apaas/web-sdk/commit/f92db3da8ef0996a35c6d652e86195b0f5bf8f70))
+* **expression:** rm useDynamicValue ([d167ed5](https://github.com/qcloud-apaas/web-sdk/commit/d167ed5d5e501adf1bdae152e8aa190dd96bd191))
+
 ### [0.1.22](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.21...v0.1.22) (2021-10-29)
 
 
