@@ -1,27 +1,28 @@
 export type RecordFilterItem = {
-  FieldApiKey: string;
-  Operator: string;
-  Value: any;
+  fieldApiKey: string;
+  operator: string;
+  value: any;
 }
 
 export type RecordFilterCondition = {
-  Conditions: (RecordFilterItem | RecordFilterCondition)[];
-  Connector: 'AND' | 'OR';
+  conditions: (RecordFilterItem | RecordFilterCondition)[];
+  connector: 'AND' | 'OR';
 };
 
 export type GetRecordByFilterRequestParams = {
-  appCode: string;
-  entityApiKey: string;
+  fieldApiKeys: string[],
   filter: {
     condition?: RecordFilterCondition;
-    option?: {
-      offset: number;
-      limit: number;
-      orderBy?: {
-        fieldCode: string;
-        order: 'DESC' | 'ASC';
-      };
-      count?: boolean;
+  };
+  option?: {
+    offset: number;
+    limit: number;
+    orderBy?: {
+      fieldApiKey: string;
+      order: 'DESC' | 'ASC';
     };
+    count?: boolean;
   };
 }
+
+

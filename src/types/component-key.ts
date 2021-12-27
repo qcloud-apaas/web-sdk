@@ -65,4 +65,8 @@ export type ComponentKey =
   | 'CancelBtn' // 取消
   | 'RefuseBtn' // 驳回
   | 'SearchForm' // 查询表单
-  | 'StackContainer'; // 根容器组件
+  | 'StackContainer' // 根容器组件
+  | 'FloatButton' // 悬浮按钮
+  | 'Timeline' // 时间轴
+  | 'Slider' // 滑块
+  | 'LineChart' // 折线图;
