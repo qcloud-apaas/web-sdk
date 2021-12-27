@@ -30,7 +30,7 @@ export type DynamicFormBuildInComps =
   | 'TreeOperatesSetting'
   | 'ComponentSelect'
   | 'AutoValue'
-  | 'Slot';
+  | 'ColorPicker';
 
 export type DynamicFormPropType =
   | 'string'
