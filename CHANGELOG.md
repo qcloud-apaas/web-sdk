@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.25](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.24...v0.1.25) (2021-12-27)
+
+
+### Features
+
+* **DynamicForm:** add ColorPicker key ([c8d800e](https://github.com/qcloud-apaas/web-sdk/commit/c8d800e0b799d2d48aa40e95092b2d4a99943914))
+
 ### [0.1.24](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.23...v0.1.24) (2021-12-27)
 
 
