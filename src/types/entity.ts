@@ -1,3 +1,10 @@
+import { ResponseError } from './fetch';
+
+export type EntityHttpResponse<T = any> = {
+  data: T;
+  error?: ResponseError;
+}
+
 export type RecordFilterItem = {
   fieldApiKey: string;
   operator: string;
@@ -25,4 +32,46 @@ export type GetRecordByFilterRequestParams = {
   };
 }
 
+export type RecordData = {
+  entityCode: string;
+  entityApiKey: string;
+  mainField: string;
+  recordId: string;
+  fieldValueMap?: Record<string, any>;
+  fieldValueMapWithCode?: Record<string, any>;
+}
 
+
+export type GetRecordByIdResponse = EntityHttpResponse<RecordData>;
+
+export type GetRecordByFilterResponse = EntityHttpResponse<{
+  records: RecordData[];
+  total: number;
+}>;
+
+export type CreateRecordParams = {
+  data: Record<string, any>;
+  queryBy?: 'code' | 'apiKey';
+}
+
+export type UpdateRecordParams = {
+  data: Record<string, any>;
+  queryBy?: 'code' | 'apiKey';
+  recordId: string;
+}
+
+export type DataSourceMethodParams<T = any> = {
+  paramKey: string;
+  fieldType: string;
+  value: T;
+}
+
+export type InvokeDataSourceMethodRequestParams = {
+  methodName: string;
+  params: DataSourceMethodParams[];
+}
+
+export type InvokeDataSourceMethodResponse = {
+  invodeResults: any[];
+  total: number;
+}

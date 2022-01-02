@@ -1,12 +1,18 @@
-import ComponentService from './ComponentService';
 import { StatePatcher } from '../components/state';
+import IComponentService from './ComponentService';
 
-declare class PageService {
+declare namespace IPageService {
+  type getService = (pageCode: string) => IPageService;
+}
+
+declare class IPageService {
+  static getService(pageCode: string): IPageService;
+
+  getComponentService(compId: string): IComponentService;
+
   getComponentState<T>(compId: string): T;
 
   setComponentState<T>(compId: string, patcher: StatePatcher<T>): void;
-
-  getComponentService(compId: string): ComponentService;
 
   execComponentAction(compId: string, actionName: string, params: any): void;
 
@@ -17,4 +23,4 @@ declare class PageService {
   getParamVariable<T = any>(key: string): T;
 }
 
-export default PageService;
+export default IPageService;

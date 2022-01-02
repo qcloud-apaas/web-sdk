@@ -19,6 +19,12 @@ export type Field = {
   requireFlag: number;
   type: number;
   uniqueFlag: string;
+  customFlag: number;
+  description: string;
+  displayFlag: number;
+  editFlag: number;
+  fieldLink: any;
+  layoutFlag: number;
 };
 
 export type PageData = {
