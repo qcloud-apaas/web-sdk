@@ -10,9 +10,9 @@ declare class IPageService {
 
   getComponentService(compId: string): IComponentService;
 
-  getComponentState<T>(compId: string): T;
+  getComponentState<T = any>(compId: string): T;
 
-  setComponentState<T>(compId: string, patcher: StatePatcher<T>): void;
+  setComponentState<T = any>(compId: string, patcher: StatePatcher<T>): void;
 
   execComponentAction(compId: string, actionName: string, params: any): void;
 

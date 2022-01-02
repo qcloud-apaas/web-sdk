@@ -17,19 +17,22 @@ export type RecordFilterCondition = {
 };
 
 export type GetRecordByFilterRequestParams = {
-  fieldApiKeys: string[],
-  filter: {
+  queryBy?: 'apiKey' | 'code',
+  fieldCodes?: string[],
+  fieldApiKeys?: string[],
+  filter?: {
     condition?: RecordFilterCondition;
-  };
-  option?: {
-    offset: number;
-    limit: number;
-    orderBy?: {
-      fieldApiKey: string;
-      order: 'DESC' | 'ASC';
+    option?: {
+      offset: number;
+      limit: number;
+      orderBy?: {
+        fieldApiKey: string;
+        order: 'DESC' | 'ASC';
+      };
+      count?: boolean;
     };
-    count?: boolean;
   };
+
 }
 
 export type RecordData = {
@@ -72,6 +75,6 @@ export type InvokeDataSourceMethodRequestParams = {
 }
 
 export type InvokeDataSourceMethodResponse = {
-  invodeResults: any[];
-  total: number;
+  invodeResult: any[];
+  count: number;
 }
