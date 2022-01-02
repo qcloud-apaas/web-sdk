@@ -69,4 +69,6 @@ export type ComponentKey =
   | 'FloatButton' // 悬浮按钮
   | 'Timeline' // 时间轴
   | 'Slider' // 滑块
-  | 'LineChart' // 折线图;
+  | 'LineChart' // 折线图
+  | 'ListItem' // 列表项
+

@@ -16,6 +16,7 @@ export type UseModelApiOptions<V> = {
   defaultValueByExpression?: string;
   dynamicValue?: string;
   validators?: any;
+  formatter: (value: any) => V;
   beforeSubmit: (value: V) => void | boolean;
 };
 
