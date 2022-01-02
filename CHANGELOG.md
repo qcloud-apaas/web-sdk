@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.26](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.25...v0.1.26) (2022-01-02)
+
+
+### Features
+
+* **componentKey:** add key ListItem ([5a8e100](https://github.com/qcloud-apaas/web-sdk/commit/5a8e10022c115750551dc76a2e0ac52a7c0aae46))
+* **service:** add service ([e881703](https://github.com/qcloud-apaas/web-sdk/commit/e881703b76c04c1919e70458c715b9cacb72059d))
+* add runtime hooks service ([7ec1117](https://github.com/qcloud-apaas/web-sdk/commit/7ec111734f36d1de24657824170bf3e7716841c8))
+
 ### [0.1.25](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.24...v0.1.25) (2021-12-27)
 
 
