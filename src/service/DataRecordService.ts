@@ -1,4 +1,4 @@
-declare class IDataRecordService<R = any> {
+export declare class IDataRecordService<R = any> {
   getFieldValues(): R;
 
   getFieldValuesByApiKey(): any;
@@ -12,4 +12,3 @@ declare class IDataRecordService<R = any> {
   subscribeContextFieldByKey(fieldApiKey: string, callback: Function): any;
 }
 
-export default IDataRecordService;

@@ -40,7 +40,7 @@ import {
   UseVariableApi,
   UseParserApi,
 } from '../hooks';
-import { GlobalService, PageService, ComponentService, DataRecordService, EntityService } from '../service';
+import { IGlobalService, IPageService, IComponentService, IDataRecordService, IEntityService } from '../service';
 
 export * from './component-key';
 export * from './container-context-data';
@@ -121,11 +121,11 @@ export type RunModeSDKInjection = {
   useExpressionApi: UseExpressionApi,
   useExpressionWithContextApi: UseExpressionWithContextApi,
   useVariable: UseVariableApi,
-  useParse: UseParserApi,
-  getGlobalService: GlobalService.getService,
-  getPageService: PageService.getService,
-  getComponentService: ComponentService.getService,
-  getEntityService: EntityService.getService,
+  useParser: UseParserApi,
+  getGlobalService: IGlobalService.getService,
+  getPageService: IPageService.getService,
+  getComponentService: IComponentService.getService,
+  getEntityService: IEntityService.getService,
 };
 
 export type RunModeSDK = CommonSDK & RunModeSDKInjection;

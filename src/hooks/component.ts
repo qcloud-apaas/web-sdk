@@ -4,7 +4,7 @@ export type SetStateDispatcher<V = any> = (patcher: V | StatePatcher<V>) => void
 
 export type UseComponentStateApi<V = any> = (stateKey: string, intialValue: V) => [V, SetStateDispatcher];
 
-export type UseComponentActionApi<F extends Function = Function> = (actionName: string, actionCallback: F) => F;
+export type UseComponentActionApi<F extends Function = Function> = (actionName: string, actionCallback: F, deps: Array<any>) => F;
 
 export type UseModelApiOptions<V> = {
   stateKey?: string;

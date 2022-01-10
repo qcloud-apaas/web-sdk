@@ -1,13 +1,13 @@
 import { GetRecordByFilterRequestParams, CreateRecordParams, UpdateRecordParams, GetRecordByIdResponse, GetRecordByFilterResponse, EntityHttpResponse, InvokeDataSourceMethodResponse, InvokeDataSourceMethodRequestParams } from '../types/entity';
 import { Field } from '../types/model';
 
-declare namespace IEntityService {
+export declare namespace IEntityService {
   type getService = (entityIdentifier: string, options?: {
     queryBy?: 'apiKey' | 'code';
   }) => IEntityService;
 }
 
-declare class IEntityService {
+export declare class IEntityService {
   /**
    * 根据recordId获取单条数据
    * @param recordId 记录ID
@@ -93,4 +93,3 @@ declare class IEntityService {
 
 }
 
-export default IEntityService;

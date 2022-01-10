@@ -1,10 +1,10 @@
 import { StatePatcher } from '../components/states';
 
-declare namespace IComponentService {
+export declare namespace IComponentService {
   type getService = (pageCode: string, compId: string) => IComponentService;
 }
 
-declare class IComponentService<State = any, Props = any> {
+export declare class IComponentService<State = any, Props = any> {
   getState<S = State>(): S;
 
   setState<S = State>(patcher: StatePatcher<S>): void;
@@ -26,4 +26,3 @@ declare class IComponentService<State = any, Props = any> {
   forceUpdate(): void;
 }
 
-export default IComponentService;

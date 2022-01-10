@@ -1,4 +1,4 @@
-import IDataRecordService from '../service/DataRecordService';
+import { IDataRecordService } from '../service';
 
 type ExpressionParseContext = {
   recordId: string;
@@ -18,15 +18,15 @@ export type UseExpressionWithContextApi<R = any> = (expression: string, context:
 export type UseVariableApi<R = any> = (variableType: VariableType, variableKey: string, callback: ParserCallback<R>) => R;
 
 export type UseParserApi = () => {
-  parseComponentValue: <V = any>(params: {
+  parseVariableValue: <V = any>(params: {
     paramType: VariableType;
     key: string;
   }) => V;
-  parseVariableValue: <V = any>(params: {
-    compId: string;
-    source?: 'state' | 'props';
-    key: string;
-  }) => V;
+  parseComponentValue: <V = any>(
+    compId: string,
+    source?: 'state' | 'props',
+    key?: string,
+  ) => V;
   parseFileValueAsync: <T = any>(fileIds: T) => Promise<T>;
 };
 

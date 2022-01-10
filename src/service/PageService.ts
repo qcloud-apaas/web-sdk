@@ -1,11 +1,11 @@
 import { StatePatcher } from '../components/states';
-import IComponentService from './ComponentService';
+import { IComponentService } from './ComponentService';
 
-declare namespace IPageService {
+export declare namespace IPageService {
   type getService = (pageCode: string) => IPageService;
 }
 
-declare class IPageService {
+export declare class IPageService {
   static getService(pageCode: string): IPageService;
 
   /**
@@ -27,4 +27,3 @@ declare class IPageService {
   getParamVariable<T = any>(key: string): T;
 }
 
-export default IPageService;

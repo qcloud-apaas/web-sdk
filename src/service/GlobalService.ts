@@ -1,11 +1,11 @@
 import { EnumItem } from '../types/enums';
-import IPageService from './PageService';
+import { IPageService } from './PageService';
 
-declare namespace IGlobalService {
+export declare namespace IGlobalService {
   type getService = () => IGlobalService;
 }
 
-declare class IGlobalService {
+export declare class IGlobalService {
   static getService(): IGlobalService;
 
   /**
@@ -40,4 +40,3 @@ declare class IGlobalService {
   getSystemVariable<T = any>(key: string): T;
 }
 
-export default IGlobalService;

@@ -1,13 +1,13 @@
-import GlobalService from './GlobalService';
-import PageService from './PageService';
-import ComponentService from './ComponentService';
-import EntityService from './EntityService';
-import DataRecordService from './DataRecordService';
+import { IGlobalService } from './GlobalService';
+import { IPageService } from './PageService';
+import { IComponentService } from './ComponentService';
+import { IEntityService } from './EntityService';
+import { IDataRecordService } from './DataRecordService';
 
 export {
-  GlobalService,
-  PageService,
-  ComponentService,
-  EntityService,
-  DataRecordService,
+  IGlobalService,
+  IPageService,
+  IComponentService,
+  IEntityService,
+  IDataRecordService,
 }
