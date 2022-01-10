@@ -47,7 +47,7 @@ export * from './container-context-data';
 export * from './dynamic-value';
 export * from './fetch';
 export * from './jsx-component';
-export * from './panel-config';
+export * from '../components/properties';
 export * from './trans';
 export * from './use-event-handlers';
 export * from './model';

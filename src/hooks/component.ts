@@ -1,4 +1,4 @@
-import { StatePatcher } from '../components/state';
+import { StatePatcher } from '../components/states';
 
 export type SetStateDispatcher<V = any> = (patcher: V | StatePatcher<V>) => void;
 

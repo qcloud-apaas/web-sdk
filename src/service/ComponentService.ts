@@ -1,4 +1,4 @@
-import { StatePatcher } from '../components/state';
+import { StatePatcher } from '../components/states';
 
 declare namespace IComponentService {
   type getService = (pageCode: string, compId: string) => IComponentService;

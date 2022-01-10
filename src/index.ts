@@ -16,6 +16,9 @@ import './inject';
 
 export * from './types';
 export * from './constant';
+export * from './components';
+export * from './service';
+export * from './hooks';
 
 export const SDK: SDKType = ({
   /**

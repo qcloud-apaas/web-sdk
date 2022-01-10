@@ -1,6 +1,4 @@
-import { ForwardRefExoticComponent, PropsWithoutRef, RefAttributes } from 'react';
-import { ComponentKey } from './component-key';
-import { PageData } from './model';
+import { DynamicSlotTemplate, SlotTemplate } from './slots';
 
 export type DynamicFormBuildInComps =
   | 'InputString'
@@ -101,60 +99,16 @@ export type DynamicFormGroup = {
   items: string[];
 };
 
-export type SlotTemplate = {
-  component?: string;
-  slot: string;
-  key?: string;
-  props?: any;
-  code?: string;
-  children?: SlotTemplate[];
-};
-
-export type DynamicSlotTemplate = SlotTemplate | ((props: any) => SlotTemplate);
-
 export type PanelConfig = {
   fields: DynamicFormField[];
   groups: DynamicFormGroup[];
   slots?: DynamicSlotTemplate | DynamicSlotTemplate[];
 };
 
+export type PropertiesDefinition = PanelConfig;
+
 export type SlotsConfig = SlotTemplate[];
 
-export type HooksConfig = {
-  beforeCreate?: (props: any, pageData: any) => any;
-  created?: (props: any, pageData: any) => any;
-  beforeUpdate?: (newProps: any, oldProps: any, pageData: PageData) => any;
-  updated?: (props: any, pageData: any) => any;
-  beforeDestroy?: (props: any) => any;
-  destroyed?: (props: any) => any;
-};
 
-export type ComponentActionParamItem = {
-  label: string;
-  key: string;
-  type: string;
-  component?: string | React.Component | ((props: any) => React.ReactElement);
-};
 
-export type ComponentActionDefinition = {
-  label: string;
-  key: string;
-  params?: ComponentActionParamItem[];
-};
 
-export type ComponentStateDefinition = {
-  label: string;
-  key: string;
-};
-
-export type ComponentConfig = {
-  key: ComponentKey; // 组件唯一标识
-  title: string; // 组件名
-  icon: string; // 组件图标
-  component: ForwardRefExoticComponent<PropsWithoutRef<any> & RefAttributes<any>>; // 设计态组件
-  panelConfig: PanelConfig; // 属性面板配置
-  hooksConfig?: HooksConfig;
-  slotsConfig?: DynamicSlotTemplate | DynamicSlotTemplate[];
-  actionsConfig?: ComponentActionDefinition[];
-  statesConfig?: ComponentStateDefinition[];
-};

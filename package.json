@@ -29,7 +29,9 @@
     "stylelint:fix": "stylelint src/**/*.scss --fix",
     "dts-bundle": "dts-bundle --configJson dts-bundle.json",
     "pack": "webpack",
-    "release": "standard-version"
+    "release": "standard-version",
+    "pub": "npm publish",
+    "pub:next": "npm publish --tag next"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

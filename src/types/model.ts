@@ -9,18 +9,18 @@ export type Entity = {
 export type Field = {
   apiKey: string;
   code: string;
+  name: string;
   entityCode: string;
   linkEntityCode?: string;
   linkFieldCode?: string;
-  mainField: string;
+  mainField: number; // 是否是主字段
   maxLength: number;
   minLength: number;
-  name: string;
-  requireFlag: number;
-  type: number;
-  uniqueFlag: string;
-  customFlag: number;
-  description: string;
+  requireFlag: number; // 是否必填
+  type: number; // 字段类型
+  uniqueFlag: string; // 是否唯一
+  customFlag: number; // 是否为自定义字段
+  description: string; // 描述文本
   displayFlag: number;
   editFlag: number;
   fieldLink: any;
