@@ -18,10 +18,10 @@ export type UseExpressionWithContextApi<R = any> = (expression: string, context:
 export type UseVariableApi<R = any> = (variableType: VariableType, variableKey: string, callback: ParserCallback<R>) => R;
 
 export type UseParserApi = () => {
-  parseVariableValue: <V = any>(params: {
-    paramType: VariableType;
-    key: string;
-  }) => V;
+  parseVariableValue: <V = any>(
+    paramType: VariableType,
+    key: string,
+  ) => V;
   parseComponentValue: <V = any>(
     compId: string,
     source?: 'state' | 'props',
