@@ -28,6 +28,7 @@ export type DynamicFormBuildInComps =
   | 'TreeOperatesSetting'
   | 'ComponentSelect'
   | 'AutoValue'
+  | 'ImageSelect'
   | 'ColorPicker';
 
 export type DynamicFormPropType =

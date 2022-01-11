@@ -53,6 +53,7 @@ export * from './use-event-handlers';
 export * from './model';
 export * from './properties';
 export * from './canvas';
+export * from './event';
 
 export { DesignModeBuiltIns, RunModeBuiltIns };
 
