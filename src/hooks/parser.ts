@@ -2,7 +2,7 @@ import { IDataRecordService } from '../service';
 
 type ExpressionParseContext = {
   recordId: string;
-  recordData: string;
+  recordData: Record<string, any>;
   entityCode: string;
 } | IDataRecordService;
 
