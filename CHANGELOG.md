@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.26...v0.2.2) (2022-01-11)
+
+
+### Features
+
+* **ActionEvent:** add ActionEvent type ([5602c7b](https://github.com/qcloud-apaas/web-sdk/commit/5602c7b558b72f7229fe116434609e1cf6d6ef39))
+* **components:** add defineComponent api ([1de06d9](https://github.com/qcloud-apaas/web-sdk/commit/1de06d95a034684e1f6696837af670c6c6b21f9c))
+* **service:** add service and hooks ([fd010f0](https://github.com/qcloud-apaas/web-sdk/commit/fd010f07eae9bafaeea3d23d1fdc090c985a4ad5))
+
+
+### Bug Fixes
+
+* **useParser:** parseVariableValue ([54a6fb1](https://github.com/qcloud-apaas/web-sdk/commit/54a6fb1fe3d4c6efa618f76a59962cf9e29f505a))
+
 ### [0.1.26](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.25...v0.1.26) (2022-01-02)
 
 
