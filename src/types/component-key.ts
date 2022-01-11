@@ -19,6 +19,7 @@ export type ComponentKey =
   | 'LinkBlock'
   | 'Column'
   | 'Alignment' // 对齐方式
+  | 'Stepper' // 步骤条组件
   // 输入组件
   | 'Input' // 单行输入框
   | 'TextArea' // 多行输入框
@@ -41,6 +42,8 @@ export type ComponentKey =
   | 'Local' // 地区选择
   | 'Country' // 国家选择
   | 'ReferenceSelector' // ReferenceSelector选择器
+  | 'DateRangePicker' // DateRangePicker日期区间选择
+  | 'DataView' // DataView 数据容器
   // 通用组件
   | 'Button' // 按钮
   | 'Text' // 文本
@@ -54,10 +57,18 @@ export type ComponentKey =
   | 'Positioning' // 定位组件
   | 'Meeting' // 会议组件
   | 'Jsx' // JSX代码组件
+  | 'VideoPlayer' // 视频播放组件
+  | 'Iframe' // iframe 内嵌框架组件
   // 审批按钮
   | 'AgreeBtn' // 同意
   | 'ApplyBtn' // 申请
   | 'CancelBtn' // 取消
   | 'RefuseBtn' // 驳回
   | 'SearchForm' // 查询表单
-  | 'StackContainer'; // 根容器组件
+  | 'StackContainer' // 根容器组件
+  | 'FloatButton' // 悬浮按钮
+  | 'Timeline' // 时间轴
+  | 'Slider' // 滑块
+  | 'LineChart' // 折线图
+  | 'ListItem' // 列表项
+

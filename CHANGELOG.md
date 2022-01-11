@@ -2,6 +2,57 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.26](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.25...v0.1.26) (2022-01-02)
+
+
+### Features
+
+* **componentKey:** add key ListItem ([5a8e100](https://github.com/qcloud-apaas/web-sdk/commit/5a8e10022c115750551dc76a2e0ac52a7c0aae46))
+* **service:** add service ([e881703](https://github.com/qcloud-apaas/web-sdk/commit/e881703b76c04c1919e70458c715b9cacb72059d))
+* add runtime hooks service ([7ec1117](https://github.com/qcloud-apaas/web-sdk/commit/7ec111734f36d1de24657824170bf3e7716841c8))
+
+### [0.1.25](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.24...v0.1.25) (2021-12-27)
+
+
+### Features
+
+* **DynamicForm:** add ColorPicker key ([c8d800e](https://github.com/qcloud-apaas/web-sdk/commit/c8d800e0b799d2d48aa40e95092b2d4a99943914))
+
+### [0.1.24](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.23...v0.1.24) (2021-12-27)
+
+
+### Features
+
+* **componentKey:** add component key ([cbc0a77](https://github.com/qcloud-apaas/web-sdk/commit/cbc0a77062b3fddd739d5ae14ec75ce9d36d4985))
+
+### [0.1.23](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.22...v0.1.23) (2021-12-14)
+
+
+### Features
+
+* **componentKey:** add iframe key ([9967253](https://github.com/qcloud-apaas/web-sdk/commit/9967253583b022b5056be404b97985b4925ad4d4))
+* **service:** add service types ([c4accdc](https://github.com/qcloud-apaas/web-sdk/commit/c4accdcb941853fed79dc199d20cd5395e251cd1))
+* add component AutoValue ([c33d871](https://github.com/qcloud-apaas/web-sdk/commit/c33d871c69e694b2e71afc88974728c269792547))
+* add VideoPlayer component ([f92db3d](https://github.com/qcloud-apaas/web-sdk/commit/f92db3da8ef0996a35c6d652e86195b0f5bf8f70))
+* **expression:** rm useDynamicValue ([d167ed5](https://github.com/qcloud-apaas/web-sdk/commit/d167ed5d5e501adf1bdae152e8aa190dd96bd191))
+
+### [0.1.22](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.21...v0.1.22) (2021-10-29)
+
+
+### Features
+
+* add componentkey dataview ([ec7d1ab](https://github.com/qcloud-apaas/web-sdk/commit/ec7d1ab1d09a9050c7f00937f5511f3909b3dd5b))
+* sdkinjection ([66232d7](https://github.com/qcloud-apaas/web-sdk/commit/66232d7a98691acc1e288a32596095e80e992b49))
+
+### [0.1.21](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.20...v0.1.21) (2021-10-11)
+
+
+### Features
+
+* **componentkey:** add stepper daterangepicker ([fd8bdf2](https://github.com/qcloud-apaas/web-sdk/commit/fd8bdf27e27a184935f76efb1a37a61c86dfb58f))
+
+### [0.1.20](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.19...v0.1.20) (2021-10-02)
+
 ### [0.1.19](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.18...v0.1.19) (2021-09-06)
 
 

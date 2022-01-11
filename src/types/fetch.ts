@@ -1,5 +1,10 @@
 import { DynamicDataSource, ObjectVariableType } from './properties';
 
+export type ResponseError = {
+  code: string;
+  message: string;
+}
+
 export type MetaDataApiParams = {
   appCode: string;
   entityApiKey: string;

@@ -1,6 +1,6 @@
 {
   "name": "@qcloud-apaas/web-sdk",
-  "version": "0.1.19",
+  "version": "0.2.1",
   "description": "SDK for apaas component deveopment",
   "license": "MIT",
   "main": "lib/index.js",
@@ -29,7 +29,9 @@
     "stylelint:fix": "stylelint src/**/*.scss --fix",
     "dts-bundle": "dts-bundle --configJson dts-bundle.json",
     "pack": "webpack",
-    "release": "standard-version"
+    "release": "standard-version",
+    "pub": "npm publish",
+    "pub:next": "npm publish --tag next"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

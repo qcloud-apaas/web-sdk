@@ -12,3 +12,5 @@ export type DynamicValueConfig = {
   type: DynamicValueTypes;
   value: any;
 };
+
+export type UseDynamicValueApi = (config: DynamicValueConfig, opt: { rowIndex?: number; defaultValue?: any }) => any;
