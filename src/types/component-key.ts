@@ -71,4 +71,7 @@ export type ComponentKey =
   | 'Slider' // 滑块
   | 'LineChart' // 折线图
   | 'ListItem' // 列表项
+  | 'BiSearchBox' // BI搜索框
+  | 'BiSearchForm' // BI搜索表单
+  | 'DataSet' // 数据集
 
