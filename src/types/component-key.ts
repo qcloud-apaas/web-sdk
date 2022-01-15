@@ -74,4 +74,6 @@ export type ComponentKey =
   | 'BiSearchBox' // BI搜索框
   | 'BiSearchForm' // BI搜索表单
   | 'DataSet' // 数据集
+  | 'Statement'
+  | 'PivotTable'
 
