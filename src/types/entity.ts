@@ -82,3 +82,19 @@ export type InvokeDataSourceMethodResponse = {
   invodeResult: any[];
   count: number;
 }
+
+export type FlowReturnNodeItem = {
+  entityCode: string | null;
+  value: any;
+  variableType: string;
+}
+
+export type StartFlowResponse = {
+  closePageFlag?: boolean;
+  count?: number;
+  returnParams: FlowReturnNodeItem[];
+  instanceId: string;
+  messageList: any[]
+  openPageFlag: boolean;
+  refreshPageFlag: boolean;
+}

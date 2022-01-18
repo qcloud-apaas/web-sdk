@@ -1,3 +1,4 @@
+import { EntityHttpResponse, StartFlowResponse } from '../types/entity';
 import { EnumItem } from '../types/enums';
 import { IPageService } from './PageService';
 
@@ -38,5 +39,19 @@ export declare class IGlobalService {
    * @param key 系统变量名称
    */
   getSystemVariable<T = any>(key: string): T;
+
+  /**
+   * 打开页面
+   * @param pageCode 页面编码
+   * @param params 页面入参
+   */
+  openPage<P extends Record<string, any> = Record<string, any>>(pageCode: string, params: P, callback: () => void): void;
+
+  /**
+   * 发起流程
+   * @param flowCode 流程编码
+   * @param params 流程入参
+   */
+  startFlow<P extends Record<string, any> = Record<string, any>>(flowCode: string, params: P): Promise<EntityHttpResponse<StartFlowResponse>>;
 }
 
