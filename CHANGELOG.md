@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/qcloud-apaas/web-sdk/compare/v0.2.2...v0.2.5) (2022-01-18)
+
+
+### Features
+
+* **GlobalService:** openPage startFlow ([4327aaa](https://github.com/qcloud-apaas/web-sdk/commit/4327aaab7408d51167cbd2859a31806cb33e4ad1))
+* add component key ([de6c29a](https://github.com/qcloud-apaas/web-sdk/commit/de6c29a1c18caaa1b1d168ba9207b543678e97fb))
+* add componentkey ([da3affe](https://github.com/qcloud-apaas/web-sdk/commit/da3affe12c4fab4b248e3d3f0987dbe80f041f80))
+
 ### [0.2.2](https://github.com/qcloud-apaas/web-sdk/compare/v0.1.26...v0.2.2) (2022-01-11)
 
 
