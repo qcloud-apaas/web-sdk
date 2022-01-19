@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.6](https://github.com/qcloud-apaas/web-sdk/compare/v0.2.5...v0.2.6) (2022-01-19)
+
+
+### Features
+
+* **GlobalService:** startFlow params type ([a949b8d](https://github.com/qcloud-apaas/web-sdk/commit/a949b8d4bfc5c16f9b1d7f9289c17a2bd5cff739))
+
 ### [0.2.5](https://github.com/qcloud-apaas/web-sdk/compare/v0.2.2...v0.2.5) (2022-01-18)
 
 
