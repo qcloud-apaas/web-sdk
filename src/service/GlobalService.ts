@@ -1,4 +1,4 @@
-import { EntityHttpResponse, StartFlowResponse } from '../types/entity';
+import { EntityHttpResponse, StartFlowResponse, FlowInputParamItem } from '../types/entity';
 import { EnumItem } from '../types/enums';
 import { IPageService } from './PageService';
 
@@ -52,6 +52,6 @@ export declare class IGlobalService {
    * @param flowCode 流程编码
    * @param params 流程入参
    */
-  startFlow<P extends Record<string, any> = Record<string, any>>(flowCode: string, params: P): Promise<EntityHttpResponse<StartFlowResponse>>;
+  startFlow(flowCode: string, params: FlowInputParamItem[]): Promise<EntityHttpResponse<StartFlowResponse>>;
 }
 

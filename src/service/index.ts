@@ -1,8 +1,8 @@
-import { IGlobalService } from './GlobalService';
-import { IPageService } from './PageService';
-import { IComponentService } from './ComponentService';
-import { IEntityService } from './EntityService';
-import { IDataRecordService } from './DataRecordService';
+import type { IGlobalService } from './GlobalService';
+import type { IPageService } from './PageService';
+import type { IComponentService } from './ComponentService';
+import type { IEntityService } from './EntityService';
+import type { IDataRecordService } from './DataRecordService';
 
 export {
   IGlobalService,

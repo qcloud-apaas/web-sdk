@@ -83,6 +83,14 @@ export type InvokeDataSourceMethodResponse = {
   count: number;
 }
 
+export type FlowInputParamItem = {
+  entityCode?: string;
+  value?: any;
+  recordId?: string;
+  variableType: string;
+  paramCode: string;
+}
+
 export type FlowReturnNodeItem = {
   entityCode: string | null;
   value: any;
