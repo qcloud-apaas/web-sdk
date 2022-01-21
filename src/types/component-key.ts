@@ -76,4 +76,5 @@ export type ComponentKey =
   | 'DataSet' // 数据集
   | 'Statement'
   | 'PivotTable'
+  | 'Collapse'
 
