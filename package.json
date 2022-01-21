@@ -1,6 +1,6 @@
 {
   "name": "@qcloud-apaas/web-sdk",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "SDK for apaas component deveopment",
   "license": "MIT",
   "main": "lib/index.js",

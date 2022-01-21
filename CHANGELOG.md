@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.7](https://github.com/qcloud-apaas/web-sdk/compare/v0.2.6...v0.2.7) (2022-01-21)
+
+
+### Features
+
+* **componentKey:** add Collapse ([8cf563a](https://github.com/qcloud-apaas/web-sdk/commit/8cf563a22f5c6b6ccda312f56239bba212aca92c))
+
 ### [0.2.6](https://github.com/qcloud-apaas/web-sdk/compare/v0.2.5...v0.2.6) (2022-01-19)
 
 
