@@ -45,7 +45,7 @@ export declare class IGlobalService {
    * @param pageCode 页面编码
    * @param params 页面入参
    */
-  openPage<P extends Record<string, any> = Record<string, any>>(pageCode: string, params: P, callback: () => void): void;
+  openPage<P extends Record<string, any> = Record<string, any>>(pageCode: string, params: P, callback?: () => void): void;
 
   /**
    * 发起流程

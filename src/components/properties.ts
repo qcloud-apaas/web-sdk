@@ -96,6 +96,7 @@ export type DynamicFormField<V = Record<string, any>> = {
 };
 
 export type DynamicFormGroup = {
+  id?: string;
   title: string;
   items: string[];
 };
