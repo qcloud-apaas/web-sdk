@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.8](https://github.com/qcloud-apaas/web-sdk/compare/v0.2.7...v0.2.8) (2022-02-16)
+
+
+### Features
+
+* property group support id ([8a6d829](https://github.com/qcloud-apaas/web-sdk/commit/8a6d829617fc1b8c29ce7c00ef97414fd2e399e8))
+
 ### [0.2.7](https://github.com/qcloud-apaas/web-sdk/compare/v0.2.6...v0.2.7) (2022-01-21)
 
 
