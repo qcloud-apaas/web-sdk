@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import EventEmitter from 'eventemitter3';
 import { AxiosInstance } from 'axios';
 import { createBEM } from '../bem';
@@ -41,6 +41,7 @@ import {
   UseParserApi,
 } from '../hooks';
 import { IGlobalService, IPageService, IComponentService, IDataRecordService, IEntityService } from '../service';
+import ApaaSEnv from './env';
 
 export * from './component-key';
 export * from './container-context-data';
@@ -86,6 +87,7 @@ export type DesignModeSDK = CommonSDK & DesignModeSDKInjection;
 
 export type RunModeSDKInjection = {
   useEventHandlers: UseEventHandlers;
+  env: ApaaSEnv;
   request: AxiosInstance;
     /**
    * @deprecated 已废弃，不建议通过SDK使用, 建议使用SDK.getEntityService('yourEntityApiKey').createRecord

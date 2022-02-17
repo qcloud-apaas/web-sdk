@@ -1,5 +1,6 @@
 import { EntityHttpResponse, StartFlowResponse, FlowInputParamItem } from '../types/entity';
 import { EnumItem } from '../types/enums';
+import ApaasEnv from '../types/env';
 import { IPageService } from './PageService';
 
 export declare namespace IGlobalService {
@@ -53,5 +54,11 @@ export declare class IGlobalService {
    * @param params 流程入参
    */
   startFlow(flowCode: string, params: FlowInputParamItem[]): Promise<EntityHttpResponse<StartFlowResponse>>;
+
+  /**
+   * 获取环境相关参数
+   * @param key 参数key, 可不传 直接获取全量环境参数
+   */
+  getEnv(key?: string): ApaasEnv;
 }
 
