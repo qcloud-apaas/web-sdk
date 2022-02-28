@@ -1,4 +1,7 @@
 export declare class IDataRecordService<R = any> {
+  recordData: R;
+  recordId: string;
+  entityCode: string;
   getFieldValues(): R;
 
   getFieldValuesByApiKey(): any;

@@ -49,6 +49,12 @@ export declare class IGlobalService {
   openPage<P extends Record<string, any> = Record<string, any>>(pageCode: string, params: P, callback?: () => void): void;
 
   /**
+   * 关闭页面
+   * @param pageCode 页面编码，可不传；默认关闭当前页面；
+   */
+  closePage(pageCode?: string): void;
+
+  /**
    * 发起流程
    * @param flowCode 流程编码
    * @param params 流程入参
