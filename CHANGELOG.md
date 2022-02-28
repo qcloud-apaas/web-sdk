@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.9](https://github.com/qcloud-apaas/web-sdk/compare/v0.2.8...v0.2.9) (2022-02-28)
+
+
+### Features
+
+* **sdk:** sdkInjection ([5250c08](https://github.com/qcloud-apaas/web-sdk/commit/5250c08e171c0ece7425a0e0e40647397745b51f))
+* **service:** improve DataRecordService ([f8ef7e9](https://github.com/qcloud-apaas/web-sdk/commit/f8ef7e968a3fd206f5642361920f178de7f53775))
+
 ### [0.2.8](https://github.com/qcloud-apaas/web-sdk/compare/v0.2.7...v0.2.8) (2022-02-16)
 
 
