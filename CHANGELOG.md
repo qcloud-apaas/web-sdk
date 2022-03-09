@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.11](https://github.com/qcloud-apaas/web-sdk/compare/v0.2.10...v0.2.11) (2022-03-09)
+
 ### [0.2.10](https://github.com/qcloud-apaas/web-sdk/compare/v0.2.9...v0.2.10) (2022-03-09)
 
 
