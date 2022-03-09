@@ -77,4 +77,6 @@ export type ComponentKey =
   | 'Statement'
   | 'PivotTable'
   | 'Collapse'
+  | 'PieChart'
+  | 'BiBar'
 
