@@ -9,7 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: `qcloud-apaas-sdk-${pkgInfo.version}.js`,
     library: {
-      name: 'QcloudApaasSDK',
+      name: 'QcloudApaasComponentSDK',
       type: 'umd',
     },
   },
