@@ -25,5 +25,13 @@ export declare class IPageService {
   getVariable<T = any>(key: string): T;
 
   getParamVariable<T = any>(key: string): T;
+
+  /**
+    * 关闭页面
+    * @param options 关闭页面参数设置；refresh: boolean;是否刷新页面；
+    */
+  closePage(options: {
+    refresh: boolean;
+  }, callback?: Function): void;
 }
 

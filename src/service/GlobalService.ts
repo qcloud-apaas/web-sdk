@@ -51,8 +51,11 @@ export declare class IGlobalService {
   /**
    * 关闭页面
    * @param pageCode 页面编码，可不传；默认关闭当前页面；
+   * @param options 关闭页面参数设置；refresh: boolean;是否刷新页面；
    */
-  closePage(pageCode?: string): void;
+  closePage(pageCode: string, options: {
+    refresh: boolean;
+  }, callback?: Function): void;
 
   /**
    * 发起流程
