@@ -34,6 +34,18 @@ export declare class IEntityService {
   deleteRecord(recordId: string): Promise<EntityHttpResponse>;
 
   /**
+   * 批量删除多条记录
+   * @param recordId 请求参数
+   */
+  batchDeleteRecords(recordIds: string[]): Promise<EntityHttpResponse>;
+
+  /**
+   * 批量创建或更新多条记录
+   * @param records 根据传入数组中是否有recordId判断是新建还是更新
+   */
+  batchCreateOrUpdateRecords(records: Record<string, any>[]): Promise<EntityHttpResponse<{ recordIds: string[] }>>;
+
+  /**
    * 更新记录
    * @param params 请求参数
    */
