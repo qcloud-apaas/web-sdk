@@ -12,7 +12,7 @@ import {
 import { createBEM } from './bem';
 import { loadUmdLib, loadCss } from './load';
 import { transMetaVal2PureVal, transObjectKeys } from './trans';
-import './inject';
+export * from './inject';
 
 export * from './types';
 export * from './constant';
